@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Eltrino_Thirdarea>
+            <version>0.0.0.1</version>
+        </Eltrino_Thirdarea>
+    </modules>
+    <global>
+        <blocks>
+            <thirdarea>
+                <class>Eltrino_Thirdarea_Block</class>
+            </thirdarea>
+        </blocks>
+        <models>
+            <thirdarea>
+                <class>Eltrino_Thirdarea_Model</class>
+            </thirdarea>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <thirdarea>
+                <use>standard</use>
+                <args>
+                    <module>Eltrino_Thirdarea</module>
+                    <frontName>thirdarea</frontName>
+                </args>
+            </thirdarea>
+        </routers>
+    </frontend>
+    <thirdarea>
+    </thirdarea>
+</config>
