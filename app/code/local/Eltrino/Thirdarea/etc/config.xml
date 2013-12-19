@@ -17,17 +17,27 @@
             </thirdarea>
         </models>
     </global>
-    <frontend>
+    <thirdarea>
         <routers>
             <thirdarea>
-                <use>standard</use>
+                <use>thirdarea</use>
                 <args>
                     <module>Eltrino_Thirdarea</module>
                     <frontName>thirdarea</frontName>
                 </args>
             </thirdarea>
         </routers>
-    </frontend>
-    <thirdarea>
     </thirdarea>
+    <stores>
+        <default>
+            <web>
+                <routers>
+                    <thirdarea>
+                        <area>thirdarea</area>
+                        <class>Eltrino_Thirdarea_Controller_Router_Thirdarea</class>
+                    </thirdarea>
+                </routers>
+            </web>
+        </default>
+    </stores>
 </config>
